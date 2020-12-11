@@ -1,0 +1,32 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <div class="row pull-xs-right">
+        <div class="col-md-3 hidden-md-down">
+            <a class="navbar-brand" href="#">Github Search Profile</a>
+        </div>
+        <div class=" col-md-6">
+
+            <form id="searchForm">
+                <!-- ngNoForm -->
+
+                <div class="form-group">
+
+                    <div class="input-group">
+                        <input type="text" name="username" class="form-control" placeholder="Enter A Github Username..." [(ngModel)]="githubUser.userName"
+                            (keyup)="searchUser()">
+                        <div class="input-group-addon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+         <div class="col-md-3">
+            <nav class="nav navbar-nav  pull-xs-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/kesaboinaVenkatesh"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                </li>
+            </nav>
+        </div>
+    </div>
+</nav>
